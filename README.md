@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Progressus - Free business/corporate Bootstrap template
 =============
 
@@ -33,3 +34,7 @@ Credits
 
 
 http://ironsummitmedia.github.io/startbootstrap-modern-business/contact.html
+=======
+# victor
+victor's website for his soccer academy. Written using MEAN. This was built using open source html5 templates and bootstrap theme with angular.js
+>>>>>>> 2696657ea19ee3ea4ff68bf77a308cef17c7c6d0
