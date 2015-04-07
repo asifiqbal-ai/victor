@@ -10,9 +10,19 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var exphbs = require('express-handlebars');
+
+
+
+// set the static files location /public/img will be /img for users
+app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/public/views');
 app.engine('.hbs', exphbs({
-    defaultLayout: 'main.hbs',
-    extname: '.hbs'
+    extname: '.hbs',
+    defaultLayout: __dirname +
+        '/public/views/layouts/main.hbs',
+    partialsDir: __dirname +
+        '/public/views/partials',
+    layoutsDir: __dirname + '/public/views/layouts'
 }));
 app.set('view engine', '.hbs');
 
@@ -40,9 +50,6 @@ app.use(bodyParser.urlencoded({
 
 // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
 app.use(methodOverride('X-HTTP-Method-Override'));
-
-// set the static files location /public/img will be /img for users
-app.use(express.static(__dirname + '/public'));
 
 // routes ==================================================
 require('./app/routes/main-routes')(router); // configure our routes
