@@ -172,6 +172,13 @@ ul.list-spaces li {
     width: 100%;
 }
 
+.form-group{
+     padding-bottom: 18px;   
+}
+
+.submit-row{
+    margin-top: 20px;
+}
 .top-space {
     margin-top: 60px;
 }
