@@ -8,28 +8,28 @@ module.exports = function (router) {
     // sample api route
     router.get('/about', function (req, res) {
         // use mongoose to get all nerds in the database
-       /* Nerd.find(function (err, nerds) {
+        /* Nerd.find(function (err, nerds) {
 
-            // if there is an error retrieving, send the error. 
-            // nothing after res.send(err) will execute
-            if (err)
-                res.send(err);
+         // if there is an error retrieving, send the error.
+         // nothing after res.send(err) will execute
+         if (err)
+         res.send(err);
 
-            res.json(nerds); // return all nerds in JSON format
-        });*/
+         res.json(nerds); // return all nerds in JSON format
+         });*/
         res.render('about')
     });
 
     // route to handle creating goes here (app.post)
     // route to handle delete goes here (app.delete)
-    
-    router.get('/contact', function(req, res){
-       //res.render('contact'); 
-       res.render('contact', {layout: 'contacts-layout' });
+
+    router.get('/contact', function (req, res) {
+        //res.render('contact');
+        res.render('contact', {layout: 'contacts-layout'});
     });
 
-     router.get('/', function(req, res){
-       res.render('index'); 
+    router.get('/', function (req, res) {
+        res.render('index');
     });
 
     // frontend routes =========================================================
