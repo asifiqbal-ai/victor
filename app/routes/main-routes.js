@@ -28,6 +28,11 @@ module.exports = function (router) {
         res.render('contact', {layout: 'contacts-layout'});
     });
 
+    router.get('/register', function (req, res) {
+        //res.render('contact');
+        res.render('register');
+    });
+
     router.get('/', function (req, res) {
         res.render('index');
     });
