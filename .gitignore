@@ -2,6 +2,9 @@
 logs
 *.log
 
+# intellij idea projects
+*.iml
+
 # Runtime data
 pids
 *.pid
