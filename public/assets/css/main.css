@@ -81,6 +81,15 @@
     top: -100px;
 }
 
+.input-sm{
+    height: 34px;
+}
+
+select#playerBirthMonth,
+select#playerGender{
+    width: 102px;
+}
+
 .headroom {
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;

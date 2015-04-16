@@ -33,6 +33,11 @@ module.exports = function (router) {
         res.render('register');
     });
 
+    router.get('/material-paper', function (req, res) {
+        //res.render('contact');
+        res.render('test', {layout: 'test-layout'});
+    });
+
     router.get('/', function (req, res) {
         res.render('index');
     });

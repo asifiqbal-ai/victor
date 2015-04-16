@@ -15,7 +15,150 @@
             <header class="page-header">
                 <h1 class="page-title">Register To Train with us</h1>
             </header>
+            <form role="form">
+                <div class="row">
+                    <h3>Parent/Guardian Information</h3>
+                </div>
+                <div class="row">
+                    <fieldset class="form-inline">
+                        <div class="form-group col-sm-6">
+                            <label class="sr-only" for="parentFirstName">First name</label>
+                            <input type="text" class="form-control input-sm-12" id="parentFirstName"
+                                   placeholder="First name">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label class="sr-only" for="parentLastName">Last name</label>
+                            <input type="text" class="form-control" id="parentLastName" placeholder="Last name">
+                        </div>
+                        <span role="alert" class="errormsg col-sm-12"
+                              id="errormsg_0_first_name"
+                                >First name cannot be left blank.</span>
+                        <span role="alert" class="errormsg col-sm-12"
+                              id="errormsg_0_last_name">Last name cannot be left blank.</span>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset class="form-inline">
+                        <div class="form-group col-sm-10">
+                            <label for="parentEmail" class="sr-only">Email address</label>
+                            <input type="email" class="form-control" id="parentEmail" placeholder="Email address"/>
+                        </div>
+                        <span role="alert" class="errormsg col-sm-12" id="errormsg_0_first_name">First name cannot be left blank.</span>
+                        <span role="alert" class="errormsg col-sm-12" id="errormsg_0_last_name">Last name cannot be left blank.</span>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset class="form-inline">
+                        <div class="form-group col-sm-10">
+                            <label for="parentPhonenumber" class="sr-only">Phone number</label>
+                            <input type="tel" class="form-control" id="parentPhonenumber" placeholder="Phone number"/>
+                        </div>
+                        <span role="alert" class="errormsg col-sm-12" id="errormsg_2_phonenumber_null">First name cannot be left blank.</span>
+                        <span role="alert" class="errormsg col-sm-12" id="errormsg_2_phonenumber_incorrect">Last name cannot be left blank.</span>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <h3>Player Information</h3>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label class="sr-only" for="playerFirstname">First name</label>
+                        <input type="text" class="form-control" id="playerFirstname" placeholder="First name">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label class="sr-only" for="playerLastName">Last name</label>
+                        <input type="text" class="form-control" id="playerLastName" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <fieldset class="form-inline">
+                        <div class="form-group col-sm-5">
+                            <select class="form-control" title="Gender" id="playerGender">
+                                <option selected="true" style="display:none;">Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-7">
+                            <div class="col-sm-4">
+                                <select class="form-control birthMonthSelector" title="Birthday" id="playerBirthMonth">
+                                    <option selected="true" style="display:none;">Month</option>
+                                    <option value="january">January</option>
+                                    <option value="february">February</option>
+                                    <option value="march">March</option>
+                                    <option value="april">April</option>
+                                    <option value="may">May</option>
+                                    <option value="june">June</option>
+                                    <option value="july">July</option>
+                                    <option value="august">August</option>
+                                    <option value="september">September</option>
+                                    <option value="october">October</option>
+                                    <option value="november">November</option>
+                                    <option value="december">December</option>
+                                </select>
+                            </div>
 
+                            <div class="form-control col-sm-2">
+                                <label class="sr-only" for="playerBirthDay">
+                                    <strong>Day</strong>
+                                </label>
+                                <input type="text" maxlength="2" value="" name="playerBirthDay" id="playerBirthDay"
+                                       class="form-control  input-sm" aria-invalid="true" placeholder="Day">
+                            </div>
+                            <div class="form-control col-sm-2">
+                                <label class="sr-only" for="playerBirthYear">
+                                    <strong>Month</strong>
+                                </label>
+                                <input type="text" maxlength="4" value="" name="playerBirthYear" id="playerBirthYear"
+                                       class="form-control input-sm" aria-invalid="true" placeholder="Year">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-10">
+                        <label for="parentEmail" class="sr-only">Preferred Position</label>
+                        <input type="email" class="form-control" id="parentEmail" placeholder="Preferred Position"/>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <div class="row">
+                        <h3>Alternate Guardian</h3>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label class="sr-only" for="alternateFirstName">First name</label>
+                            <input type="text" class="form-control" id="alternateFirstName" placeholder="First name">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label class="sr-only" for="alternateLastName">Last name</label>
+                            <input type="text" class="form-control" id="alternateLastName" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-10">
+                            <label for="alternateEmail" class="sr-only">Email address</label>
+                            <input type="email" class="form-control" id="alternateEmail" placeholder="Email address"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-10">
+                            <label for="alternatePhonenumber" class="sr-only">Phone number</label>
+                            <input type="tel" class="form-control" id="alternatePhonenumber"
+                                   placeholder="Phone number"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-sm-offset-9 col-sm-3">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
 
         </article>
         <!-- /Article -->
