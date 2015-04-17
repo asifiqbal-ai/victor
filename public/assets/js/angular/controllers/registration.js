@@ -7,7 +7,7 @@ angular.module('victorApp.controllers', [])
             $scope.registerForm = {};
 
             $scope.processForm = function () {
-                console.log("Registering:" + $scope.registerForm.parentFirstName)
+                console.log($scope.registerForm)
             };
             /*$scope.reqContact = {};
              //$scope.contactForm = {};
