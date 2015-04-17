@@ -4,6 +4,11 @@
 angular.module('victorApp.controllers', [])
     .controller('registerController', ['$scope', 'registerFactory',
         function ($scope, registerFactory) {
+            $scope.registerForm = {};
+
+            $scope.processForm = function () {
+                console.log("Registering:" + $scope.registerForm.parentFirstName)
+            };
             /*$scope.reqContact = {};
              //$scope.contactForm = {};
              $scope.requestContact = function () {

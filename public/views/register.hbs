@@ -11,12 +11,11 @@
     <div class="row">
 
         <!-- Article main content -->
-        <div class="col-sm-8 maincontent">
+        <div class="col-sm-8 maincontent" ng-controller="registerController">
             <header class="page-header">
                 <h1 class="page-title">Register To Train with us</h1>
-                <input ng-model="name"> Hello {{ name }}
             </header>
-            <form role="form" class="col-sm-10">
+            <form role="form" class="col-sm-10" ng-submit="processForm()">
                 <div class="row">
                     <h3>Parent/Guardian Information</h3>
                 </div>
@@ -24,8 +23,13 @@
                     <fieldset class="form-inline">
                         <div class="form-group col-sm-6">
                             <label class="sr-only" for="parentFirstName">First name</label>
-                            <input type="text" class="form-control input-sm-12" id="parentFirstName"
-                                   placeholder="First name">
+                            <input type="text" class="form-control input-sm-12"
+                                   name="parentFirstName"
+                                   id="parentFirstName"
+                                   ng-model="registerForm.parentFirstName"
+                                   placeholder="First name"
+                                   required
+                                   >
                         </div>
                         <div class="form-group col-sm-6">
                             <label class="sr-only" for="parentLastName">Last name</label>
