@@ -87,7 +87,18 @@
 
 select#playerBirthMonth,
 select#playerGender{
-    width: 102px;
+    width: 100%;
+}
+
+.form-inline input.form-control{
+    width: 100%;
+}
+
+.errormsg {
+    margin: .5em 0 0;
+    display: block;
+    color: #dd4b39;
+    line-height: 17px;
 }
 
 .headroom {

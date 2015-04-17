@@ -10,7 +10,9 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var exphbs = require('express-handlebars');
-
+var properties = require('./config/properties.js');
+var config = properties.config();
+var port = process.env.PORT || config.port;
 
 
 // set the static files location /public/img will be /img for users
@@ -19,9 +21,9 @@ app.set('views', __dirname + '/public/views');
 app.engine('.hbs', exphbs({
     extname: '.hbs',
     defaultLayout: __dirname +
-        '/public/views/layouts/main.hbs',
+    '/public/views/layouts/main.hbs',
     partialsDir: __dirname +
-        '/public/views/partials',
+    '/public/views/partials',
     layoutsDir: __dirname + '/public/views/layouts'
 }));
 app.set('view engine', '.hbs');
@@ -32,7 +34,7 @@ app.set('view engine', '.hbs');
 // config files
 var db = require('./config/db');
 // set our port
-var port = process.env.PORT || 3000;
+/*port = process.env.PORT || 3000;*/
 
 // get all data/stuff of the body (POST) parameters
 // parse application/json 
