@@ -5,6 +5,8 @@ angular.module('victorApp.controllers', [])
     .controller('registerController', ['$scope', 'registerFactory',
         function ($scope, registerFactory) {
             $scope.registerForm = {};
+            $scope.playerGenders = [ 'Male', 'Female', 'Other'];
+            //$scope.registerForm.playerGender = $scope.playerGenders[0];
 
             $scope.processForm = function () {
                 console.log($scope.registerForm)

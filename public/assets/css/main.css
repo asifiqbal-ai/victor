@@ -85,9 +85,16 @@
     height: 34px;
 }
 
-select#playerBirthMonth,
 select#playerGender{
-    width: 100%;
+    width: 60%;
+}
+
+label#playerGenderLabel{
+    margin-right: 5px;
+}
+
+select#playerBirthMonth {
+    width: 80%;
 }
 
 .form-inline input.form-control{

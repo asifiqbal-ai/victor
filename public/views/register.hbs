@@ -29,12 +29,12 @@
                                    ng-model="registerForm.parentFirstName"
                                    placeholder="First name"
                                    required
-                                   >
+                                    >
                         </div>
                         <div class="form-group col-sm-6">
                             <label class="sr-only" for="parentLastName">Last name</label>
                             <input type="text" class="form-control" id="parentLastName" placeholder="Last name"
-                                    ng-model="registerForm.parentLastName" required>
+                                   ng-model="registerForm.parentLastName" required>
                         </div>
                         <span role="alert" class="errormsg col-sm-12"
                               id="errormsg_0_first_name"
@@ -76,7 +76,7 @@
                         <div class="form-group col-sm-6">
                             <label class="sr-only" for="playerFirstname">First name</label>
                             <input type="text" class="form-control" id="playerFirstname" placeholder="First name"
-                                    ng-model="registerForm.playerFirstName" required>
+                                   ng-model="registerForm.playerFirstName" required>
                         </div>
                         <div class="form-group col-sm-6">
                             <label class="sr-only" for="playerLastName">Last name</label>
@@ -95,11 +95,18 @@
                 <div class="row">
                     <fieldset class="form-inline">
                         <div class="form-group col-sm-4">
-                            <select ng-model="registerForm.playerGender" required class="form-control" title="Gender" id="playerGender">
-                                <option selected="true" style="display:none;">Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">Other</option>
+                            <label id="playerGenderLabel" class="control-label" for="playerGender">Gender:</label>
+                            <!-- <select ng-model="registerForm.playerGender" required class="form-control" title="Gender" id="playerGender">
+                                 <option selected="true" style="display:none;">Gender</option>
+                                 <option value="male">Male</option>
+                                 <option value="female">Female</option>
+                                 <option value="other">Other</option>
+                             </select>-->
+                            <select ng-model="registerForm.playerGender" title="Gender" id="playerGender"
+                                    class="form-control">
+                                <option ng-repeat="playerGender in playerGenders" value="{[{playerGender}]}">
+                                    {[{playerGender}]}
+                                </option>
                             </select>
                         </div>
                         <div class="form-group col-sm-8">
