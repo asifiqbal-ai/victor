@@ -94,7 +94,7 @@ label#playerGenderLabel{
 }
 
 select#playerBirthMonth {
-    width: 80%;
+    width: 100%;
 }
 
 .form-inline input.form-control{
@@ -186,7 +186,7 @@ label {
 .breadcrumb {
     background: none;
     padding: 0;
-    margin: 30px 0 0px 0;
+    margin: 30px 0 0 0;
 }
 
 ul.list-spaces li {
