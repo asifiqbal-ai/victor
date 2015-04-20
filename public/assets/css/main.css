@@ -347,3 +347,9 @@ img.pull-left {
 .widget-simplenav a {
     margin: 0 5px;
 }
+
+
+input#playerBirthDay,
+input#playerBirthYear{
+    width: 90px;
+}
